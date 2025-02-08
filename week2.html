@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>INST377-Week2_Form</title>
+    <style>
+        body {
+            background-color: rgba(221, 161, 211, 0.477);
+            font-family: monospace;
+        }
+
+        input[type="submit"] {
+            background-color: darkcyan;
+            color: white; /* Text color */
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+    
+        input[type="submit"]:hover {
+            background-color: darkorange; 
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Tell Me About Yourself</h1>
+    <form name="tmbyform" method="get" action="form_success.html">
+        <div class="form">
+            <!-- User Name Details -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <br>
+            <hr>
+        </div>
+
+        <!-- Inquiry Reason -->
+        <label for="reason">What's your favorite season?</label> <br>
+        <input type="radio" name="reason">Fall <br>
+        <input type="radio" name="reason">Summer <br>
+        <input type="radio" name="reason">Spring <br>
+        <input type="radio" name="reason">Winter <br>
+        <br>
+        <hr>
+
+        <!-- AOTY -->
+        <label for="aoty">What was your favorite Album of the Year?: </label>
+        <select id="university" name="university">
+            <option hidden disabled selected>-- Select Option --</option>
+            <option value="1">Cowboy Carter</option>
+            <option value="2">brat</option>
+            <option value="3">The Rise and Fall of a Midwest Princess</option>
+        </select>
+        <br>
+        <hr>
+        <!-- Phone Number -->
+        <label for="number">What is the best number to reach you at? </label>
+        <input type="text" id="number" placeholder="123456789" required>
+        <br>
+        <hr>
+        <input type="submit" value="Submit!">
+    </form>
+</body>
+
+</html>
